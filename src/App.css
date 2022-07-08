@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.welcome {
+  animation-duration: 3s;
+  animation-name: slidein;
+  color: white;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 10%;
+    width: 100%;
+  }
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #a4836c, #965455, #85254a, #920d6a);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #a4836c, #965455, #85254a, #920d6a);
+
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+
+.container {
+  margin: auto;
+  margin-right: 10%;
+  display: inline-block;
+}
+
+footer {
+  height: 100px;
+  background: rgb(206, 204, 204);
+  text-align: center;
+  color: aliceblue;
+}
